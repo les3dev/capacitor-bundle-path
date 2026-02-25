@@ -9,7 +9,12 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 @CapacitorPlugin(name = "BundlePath")
 public class BundlePathPlugin extends Plugin {
 
-    private BundlePath implementation = new BundlePath();
+    private BundlePath implementation;
+
+    @Override
+    public void load() {
+        implementation = new BundlePath(getContext());
+    }
 
     @PluginMethod
     public void get_path(PluginCall call) {
