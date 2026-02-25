@@ -12,11 +12,11 @@ public class BundlePathPlugin extends Plugin {
     private BundlePath implementation = new BundlePath();
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
-
+    public void get_path(PluginCall call) {
+        String path = call.getString("path");
         JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
+
+        ret.put("path", implementation.get_path(path));
         call.resolve(ret);
     }
 }

@@ -1,3 +1,3 @@
 export interface BundlePathPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  get_path(options: { path: string }): Promise<{ path?: string }>;
 }

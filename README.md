@@ -5,33 +5,36 @@ Retrieve the file system path to a bundled asset, or undefined if the asset is n
 ## Install
 
 ```bash
-npm install @les3dev/capacitor-bundle-path
-npx cap sync
+cd ..
+git clone @les3dev/capacitor-bundle-path
+cd myproject
+pnpm add https://github.com/les3dev/capacitor-bundle-path
+pnpx cap sync
 ```
 
 ## API
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+- [`get_path(...)`](#get_path)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### get_path(...)
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+get_path(options: { path: string; }) => Promise<{ path?: string; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+| Param         | Type                           |
+| ------------- | ------------------------------ |
+| **`options`** | <code>{ path: string; }</code> |
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ path?: string; }&gt;</code>
 
---------------------
+---
 
 </docgen-api>
