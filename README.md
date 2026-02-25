@@ -16,7 +16,7 @@ pnpx cap sync
 
 <docgen-index>
 
-- [`get_path(...)`](#get_path)
+* [`get_path(...)`](#get_path)
 
 </docgen-index>
 
@@ -35,6 +35,6 @@ get_path(options: { path: string; }) => Promise<{ path?: string; }>
 
 **Returns:** <code>Promise&lt;{ path?: string; }&gt;</code>
 
----
+--------------------
 
 </docgen-api>
