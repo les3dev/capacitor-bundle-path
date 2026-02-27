@@ -8,7 +8,7 @@ Retrieve the file system path to a bundled asset, or undefined if the asset is n
 cd ..
 git clone @les3dev/capacitor-bundle-path
 cd myproject
-pnpm add https://github.com/les3dev/capacitor-bundle-path
+pnpm add ../capacitor-bundle-path
 pnpx cap sync
 ```
 
