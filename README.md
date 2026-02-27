@@ -9,6 +9,7 @@ cd ..
 git clone @les3dev/capacitor-bundle-path
 cd myproject
 pnpm add ../capacitor-bundle-path
+pnpm i
 pnpx cap sync
 ```
 
