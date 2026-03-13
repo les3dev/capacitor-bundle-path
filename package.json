@@ -1,6 +1,6 @@
 {
   "name": "@les3dev/capacitor-bundle-path",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Retrieve the file system path to a bundled asset, or undefined if the asset is not found",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -17,6 +17,7 @@
   ],
   "author": "",
   "license": "MIT",
+  "homepage": "https://github.com/les3dev/capacitor-bundle-path",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/les3dev/capacitor-bundle-path.git"
@@ -63,6 +64,9 @@
   },
   "peerDependencies": {
     "@capacitor/core": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
