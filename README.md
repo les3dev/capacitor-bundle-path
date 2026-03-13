@@ -39,43 +39,26 @@ Retrieve the file system path to a bundled asset, or `undefined` if the asset is
 
 <docgen-index>
 
-- [`get_path(...)`](#get_path)
-- [Interfaces](#interfaces)
+* [`get_path(...)`](#get_path)
 
 </docgen-index>
 
 <docgen-api>
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
 ### get_path(...)
 
 ```typescript
-get_path(options: GetPathOptions) => Promise<GetPathResult>
+get_path(options: { path: string; }) => any
 ```
 
-Returns the native file system path for a given bundled asset path.
-Returns `undefined` in the `path` field if the asset is not found.
+| Param         | Type                           |
+| ------------- | ------------------------------ |
+| **`options`** | <code>{ path: string; }</code> |
 
-| Param         | Type                                                      |
-| ------------- | --------------------------------------------------------- |
-| **`options`** | <code><a href="#getpathoptions">GetPathOptions</a></code> |
+**Returns:** <code>any</code>
 
-**Returns:** <code>Promise&lt;<a href="#getpathresult">GetPathResult</a>&gt;</code>
-
----
-
-### Interfaces
-
-#### GetPathOptions
-
-| Prop       | Type                | Description                             |
-| ---------- | ------------------- | --------------------------------------- |
-| **`path`** | <code>string</code> | The relative path to the bundled asset. |
-
-#### GetPathResult
-
-| Prop       | Type                             | Description                                                             |
-| ---------- | -------------------------------- | ----------------------------------------------------------------------- |
-| **`path`** | <code>string \| undefined</code> | The native file system path, or `undefined` if the asset was not found. |
+--------------------
 
 </docgen-api>
 
